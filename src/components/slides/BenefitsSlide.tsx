@@ -49,26 +49,26 @@ const BenefitsSlide = () => {
   ];
 
   return (
-    <div className="slide-container bg-gradient-silver">
-      <div className="max-w-7xl mx-auto">
+    <div className="slide-container bg-gradient-silver min-h-screen overflow-y-auto">
+      <div className="max-w-7xl mx-auto py-8 pb-32">
         {/* Header */}
-        <div className="text-center mb-16 animate-fade-in-up">
-          <h1 className="text-5xl lg:text-6xl font-bold text-charcoal mb-6">
+        <div className="text-center mb-12 animate-fade-in-up">
+          <h1 className="text-4xl lg:text-5xl font-bold text-charcoal mb-4">
             Benefícios <span className="text-gold">Operacionais</span>
           </h1>
-          <h2 className="text-3xl font-light text-gray-600 mb-4">
+          <h2 className="text-2xl font-light text-gray-600 mb-3">
             Antes vs Depois
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Transformação mensurável em todos os indicadores-chave
           </p>
         </div>
 
         {/* Metrics Table */}
-        <div className="bg-white rounded-2xl shadow-2xl overflow-hidden animate-scale-in">
+        <div className="bg-white rounded-2xl shadow-2xl overflow-hidden animate-scale-in mb-8">
           {/* Table Header */}
-          <div className="bg-gradient-gold text-black p-6">
-            <div className="grid grid-cols-4 gap-4 font-bold text-lg">
+          <div className="bg-gradient-gold text-black p-4">
+            <div className="grid grid-cols-4 gap-4 font-bold text-base">
               <div>Indicador</div>
               <div className="text-center">Antes</div>
               <div className="text-center">Depois</div>
@@ -83,34 +83,34 @@ const BenefitsSlide = () => {
               return (
                 <div
                   key={index}
-                  className="grid grid-cols-4 gap-4 p-6 hover:bg-gray-50 transition-colors duration-200 animate-fade-in-up"
+                  className="grid grid-cols-4 gap-4 p-4 hover:bg-gray-50 transition-colors duration-200 animate-fade-in-up"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   {/* Indicator */}
                   <div className="flex items-center space-x-3">
                     <div className="p-2 bg-gray-100 rounded-lg">
-                      <IconComponent size={20} className="text-gray-600" />
+                      <IconComponent size={18} className="text-gray-600" />
                     </div>
-                    <span className="font-medium text-charcoal">{metric.label}</span>
+                    <span className="font-medium text-charcoal text-sm">{metric.label}</span>
                   </div>
 
                   {/* Before */}
                   <div className="text-center">
-                    <span className="inline-block bg-red-100 text-red-700 px-3 py-1 rounded-full text-sm font-medium">
+                    <span className="inline-block bg-red-100 text-red-700 px-2 py-1 rounded-full text-xs font-medium">
                       {metric.before}
                     </span>
                   </div>
 
                   {/* After */}
                   <div className="text-center">
-                    <span className="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-medium">
+                    <span className="inline-block bg-green-100 text-green-700 px-2 py-1 rounded-full text-xs font-medium">
                       {metric.after}
                     </span>
                   </div>
 
                   {/* Improvement */}
                   <div className="text-center">
-                    <span className="inline-block bg-gold text-black px-3 py-1 rounded-full text-sm font-bold">
+                    <span className="inline-block bg-gold text-black px-2 py-1 rounded-full text-xs font-bold">
                       {metric.improvement}
                     </span>
                   </div>
@@ -121,12 +121,12 @@ const BenefitsSlide = () => {
         </div>
 
         {/* Summary */}
-        <div className="mt-12 bg-green-50 border-l-4 border-green-500 p-8 rounded-r-xl animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
+        <div className="bg-green-50 border-l-4 border-green-500 p-6 rounded-r-xl animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
           <div className="text-center">
-            <h3 className="text-2xl font-bold text-green-700 mb-4">
+            <h3 className="text-xl font-bold text-green-700 mb-3">
               Transformação Comprovada
             </h3>
-            <p className="text-lg text-green-600">
+            <p className="text-base text-green-600">
               Resultados mensuráveis que impactam diretamente o seu faturamento e operação
             </p>
           </div>
