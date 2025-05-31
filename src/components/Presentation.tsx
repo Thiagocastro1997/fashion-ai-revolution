@@ -8,6 +8,7 @@ import ProblemSlide from './slides/ProblemSlide';
 import SolutionSlide from './slides/SolutionSlide';
 import BenefitsSlide from './slides/BenefitsSlide';
 import EnhancedROISlide from './slides/EnhancedROISlide';
+import AnalyticsSlide from './slides/AnalyticsSlide';
 import RoadmapSlide from './slides/RoadmapSlide';
 import ConclusionSlide from './slides/ConclusionSlide';
 
@@ -18,6 +19,7 @@ const slides = [
   SolutionSlide,
   BenefitsSlide,
   EnhancedROISlide,
+  AnalyticsSlide,
   RoadmapSlide,
   ConclusionSlide,
 ];

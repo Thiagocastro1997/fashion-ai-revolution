@@ -1,20 +1,18 @@
 
 import React from 'react';
-import InteractiveChart from './InteractiveChart';
-import CaseStudyCard from './CaseStudyCard';
 import ROICalculator from './ROICalculator';
 
 const EnhancedROISlide = () => {
   return (
-    <div className="slide-container bg-gradient-to-br from-gray-50 to-white min-h-screen overflow-y-auto">
-      <div className="max-w-7xl mx-auto py-8 pb-32">
+    <div className="slide-container bg-gradient-to-br from-gray-50 to-white">
+      <div className="max-w-6xl mx-auto py-8">
         {/* Header */}
         <div className="text-center mb-12 animate-fade-in-up">
           <h1 className="text-4xl lg:text-5xl font-bold text-charcoal mb-4">
             Impacto <span className="text-gold">Financeiro</span> Real
           </h1>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-6">
-            Números concretos, casos reais e projeções personalizadas para seu negócio
+            Números concretos e projeções personalizadas para seu negócio
           </p>
           <div className="bg-gold/20 border border-gold rounded-full px-6 py-2 inline-block">
             <span className="text-gold font-bold text-sm">
@@ -28,21 +26,8 @@ const EnhancedROISlide = () => {
           <ROICalculator />
         </div>
 
-        {/* Interactive Chart and Case Studies */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
-          {/* Interactive Chart */}
-          <div className="animate-scale-in" style={{ animationDelay: '0.3s' }}>
-            <InteractiveChart />
-          </div>
-
-          {/* Case Studies */}
-          <div className="animate-scale-in" style={{ animationDelay: '0.6s' }}>
-            <CaseStudyCard />
-          </div>
-        </div>
-
         {/* Key Insights */}
-        <div className="bg-gradient-to-r from-charcoal to-gray-800 rounded-2xl p-8 text-white animate-fade-in-up" style={{ animationDelay: '0.9s' }}>
+        <div className="bg-gradient-to-r from-charcoal to-gray-800 rounded-2xl p-8 text-white animate-fade-in-up">
           <h3 className="text-2xl font-bold mb-6 text-center">
             <span className="text-gold">Insights</span> Estratégicos
           </h3>
