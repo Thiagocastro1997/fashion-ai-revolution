@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Camera, Database, Chatbot, ArrowRight } from 'lucide-react';
+import { Camera, Database, MessageSquare, ArrowRight } from 'lucide-react';
 
 const SolutionSlide = () => {
   const steps = [
@@ -20,7 +20,7 @@ const SolutionSlide = () => {
     },
     {
       number: "3",
-      icon: Chatbot,
+      icon: MessageSquare,
       title: "Chatwoot Integrado",
       description: "Centraliza WhatsApp, Instagram, e loja física num CRM único",
       color: "bg-purple-500"

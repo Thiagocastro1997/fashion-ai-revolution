@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { TrendingUp, Clock, Users, Cash } from 'lucide-react';
+import { TrendingUp, Clock, Users, DollarSign } from 'lucide-react';
 
 const BenefitsSlide = () => {
   const metrics = [
@@ -40,7 +40,7 @@ const BenefitsSlide = () => {
       improvement: "↑ 21%"
     },
     {
-      icon: Cash,
+      icon: DollarSign,
       label: "Custos operacionais",
       before: "Elevados",
       after: "-20%",
